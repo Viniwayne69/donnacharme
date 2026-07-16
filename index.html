@@ -272,6 +272,32 @@
       background: #bd081c;
     }
 
+    .tiktok .icon {
+      position: relative;
+      overflow: hidden;
+      background: #050505;
+    }
+
+    .tiktok .icon img {
+      position: absolute;
+      width: 29px;
+      height: 29px;
+    }
+
+    .tiktok .icon .tiktok-cyan {
+      transform: translate(-2px, 2px);
+      opacity: 0.95;
+    }
+
+    .tiktok .icon .tiktok-red {
+      transform: translate(2px, -2px);
+      opacity: 0.95;
+    }
+
+    .tiktok .icon .tiktok-white {
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.28));
+    }
+
     .location .icon {
       background: #ffffff;
     }
@@ -428,7 +454,9 @@
 
         <a class="card tiktok" href="https://www.tiktok.com/@donna.charme7?_r=1" target="_blank" rel="noreferrer">
           <span class="icon" aria-hidden="true">
-            <img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="" />
+            <img class="tiktok-cyan" src="https://cdn.simpleicons.org/tiktok/25F4EE" alt="" />
+            <img class="tiktok-red" src="https://cdn.simpleicons.org/tiktok/FE2C55" alt="" />
+            <img class="tiktok-white" src="https://cdn.simpleicons.org/tiktok/ffffff" alt="" />
           </span>
           <span class="copy">
             <strong>TikTok</strong>
