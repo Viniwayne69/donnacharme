@@ -153,8 +153,9 @@
       border: 1px solid rgba(255, 249, 230, 0.55);
       box-shadow: 0 16px 34px rgba(25, 10, 16, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.55);
       transform: translateY(0);
-      transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
-      animation: cardReveal 620ms cubic-bezier(0.19, 1, 0.22, 1) backwards;
+      transition: transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 240ms ease, filter 240ms ease;
+      animation: cardReveal 860ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+      will-change: transform, opacity, filter;
     }
 
     .card:nth-child(1) {
@@ -296,8 +297,8 @@
     @keyframes cardReveal {
       from {
         opacity: 0;
-        transform: translate3d(0, 18px, 0) scale(0.98);
-        filter: saturate(0.92) blur(3px);
+        transform: translate3d(0, 12px, 0) scale(0.99);
+        filter: saturate(0.96) blur(1.5px);
       }
 
       to {
