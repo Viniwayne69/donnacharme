@@ -13,11 +13,11 @@ export type DonnaLink = {
 
 export const linkTargets: Record<LinkId, string> = {
   whatsapp: "#",
-  site: "#",
-  instagram: "#",
-  address: "#",
-  pinterest: "#",
-  tiktok: "#",
+  site: "https://donna-charme.bagypro.com/",
+  instagram: "https://www.instagram.com/donnacharmee_/",
+  address: "https://maps.app.goo.gl/VutGVV2eVGnRhio96",
+  pinterest: "https://br.pinterest.com/donnacharmee0046/?invite_code=beb893c0f04048e3a3734c5cb7fdc8c7&sender=1125337163047988803",
+  tiktok: "https://www.tiktok.com/@donna.charme7?_r=1&_t=ZS-984PVY769Vk",
 };
 
 export const socialShortcuts: LinkId[] = ["site", "instagram", "whatsapp"];
@@ -60,7 +60,7 @@ export const navigationLinks: DonnaLink[] = [
     title: "Pinterest",
     description: "Salve referências e composições delicadas",
     href: linkTargets.pinterest,
-    tone: "rose",
+    tone: "wine",
     ariaLabel: "Abrir Pinterest da Donna Charme",
   },
   {
@@ -68,7 +68,7 @@ export const navigationLinks: DonnaLink[] = [
     title: "TikTok",
     description: "Acompanhe vídeos, dicas e tendências",
     href: linkTargets.tiktok,
-    tone: "wine",
+    tone: "rose",
     ariaLabel: "Abrir TikTok da Donna Charme",
   },
 ];
